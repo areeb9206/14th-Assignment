@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style></style>
+  </head>
+  <body>
+    <i
+      class="fa-solid fa-magnifying-glass"
+      style="color: #62656a; position: fixed; top: 29px; left: 60px"
+    ></i>
+    <i
+      class="fa-solid fa-sliders fa-rotate-270"
+      style="color: #000000; position: fixed; top: 29px; left: 330px"
+    ></i>
+    <i
+      class="fa-solid fa-list"
+      style="color: #000000; position: fixed; top: 70px; left: 50px"
+    ></i>
+    <i
+      class="fa-solid fa-box-open fa-sm"
+      style="color: #000000; position: fixed; top: 78px; left: 485px"
+    ></i>
+    <i
+      class="fa-solid fa-dollar-sign"
+      style="color: #000000; position: fixed; top: 70px; left: 925px"
+    ></i>
+    <nav>
+      <div class="first-navigation">
+        <div class="search-bar">
+          <input type="search" placeholder="Search..." />
+        </div>
+        <div class="selection-btn">
+          <button class="cart-btn">
+            <i class="fa-solid fa-cart-plus"></i> &nbsp; Add to cart product 0
+            items
+          </button>
+
+          <button class="select-btn">
+            Select All <input type="checkbox" />
+          </button>
+        </div>
+      </div>
+      <div class="second-navigation">
+        <select name="category" id="">
+          <option value="placeholder" disabled selected>Select Category</option>
+          <option value="boots">Boots</option>
+          <option value="shirts">Shirts</option>
+          <option value="t-shirts">T-Shirts</option>
+          <option value="jeans">Jeans</option>
+          <option value="accessories">Accessories</option>
+        </select>
+
+        <select name="Stock" id="">
+          <option value="placeholder" disabled selected>Stock</option>
+          <option value="available">Available</option>
+          <option value="out-of-stock">Out Of Stock</option>
+        </select>
+
+        <select name="Prices" id="">
+          <option value="placeholder" disabled selected>Prices</option>
+          <option value="low-first">Low to high</option>
+          <option value="high-first">High to low</option>
+        </select>
+      </div>
+    </nav>
+    <table>
+      <thead>
+        <tr>
+          <th style="border-top-left-radius: 15px">Check</th>
+          <th>Thumbnail</th>
+          <th>
+            Product Title <br />
+            <i class="fa-solid fa-arrow-down fa-sm" style="color: #f5f9ff"></i>
+          </th>
+          <th>
+            Category <br /><i
+              class="fa-solid fa-arrow-down fa-sm"
+              style="color: #f5f9ff"
+            ></i>
+          </th>
+          <th>
+            Stock <br />
+            <i class="fa-solid fa-arrow-down fa-sm" style="color: #f5f9ff"></i>
+          </th>
+          <th>
+            Price <br /><i
+              class="fa-solid fa-arrow-down fa-sm"
+              style="color: #f5f9ff"
+            ></i>
+          </th>
+          <th>Quantity</th>
+          <th>Action</th>
+          <th>Quick View</th>
+          <th>SKU</th>
+          <th>Rating</th>
+          <th style="border-top-right-radius: 15px">Wishlist & Compare</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td>
+            <img
+              src="https://i.pinimg.com/736x/10/c5/d7/10c5d7d911359ff049282a66fc9a7982.jpg"
+              alt="boot img"
+            />
+          </td>
+          <td>
+            <b
+              >Boots <br />
+              BU1171</b
+            >
+          </td>
+          <td>Boots</td>
+          <td>In Stock</td>
+          <td><b>$115.11</b></td>
+          <td>
+            <div class="quantity-btns">
+              <button class="one">-</button>
+              <span>0</span>
+              <button class="two">+</button>
+            </div>
+          </td>
+          <td>
+            <button class="btn">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </td>
+          <td>
+            <button class="btn"><i class="fa-regular fa-eye"></i></button>
+          </td>
+          <td>112</td>
+          <td>
+            <b>5</b>
+            <i class="fa-solid fa-star fa-xs" style="color: #177e8c"></i>
+          </td>
+          <td>
+            <button class="btn"><i class="fa-solid fa-heart"></i></button>
+
+            <button class="btn">
+              <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td>
+            <img
+              src="https://i.pinimg.com/736x/fd/a6/4d/fda64d9c1ec61d96401a31f4327feb4d.jpg"
+              alt="boot img"
+            />
+          </td>
+          <td>
+            <b
+              >Boots <br />
+              BU1171</b
+            >
+          </td>
+          <td>Boots</td>
+          <td>In Stock</td>
+          <td><b>$115.11</b></td>
+          <td>
+            <div class="quantity-btns">
+              <button class="one">-</button>
+              <span>0</span>
+              <button class="two">+</button>
+            </div>
+          </td>
+          <td>
+            <button class="btn">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </td>
+          <td>
+            <button class="btn"><i class="fa-regular fa-eye"></i></button>
+          </td>
+          <td>112</td>
+          <td>
+            <b>5</b>
+            <i class="fa-solid fa-star fa-xs" style="color: #177e8c"></i>
+          </td>
+          <td>
+            <button class="btn"><i class="fa-solid fa-heart"></i></button>
+
+            <button class="btn">
+              <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td>
+            <img
+              src="https://i.pinimg.com/736x/5d/b9/7d/5db97d81c463babd748d61e1b8cfa5b3.jpg"
+              alt="boot img"
+            />
+          </td>
+          <td>
+            <b
+              >Boots <br />
+              BU1171</b
+            >
+          </td>
+          <td>Boots</td>
+          <td>In Stock</td>
+          <td><b>$115.11</b></td>
+          <td>
+            <div class="quantity-btns">
+              <button class="one">-</button>
+              <span>0</span>
+              <button class="two">+</button>
+            </div>
+          </td>
+          <td>
+            <button class="btn">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </td>
+          <td>
+            <button class="btn"><i class="fa-regular fa-eye"></i></button>
+          </td>
+          <td>112</td>
+          <td>
+            <b>5</b>
+            <i class="fa-solid fa-star fa-xs" style="color: #177e8c"></i>
+          </td>
+          <td>
+            <button class="btn"><i class="fa-solid fa-heart"></i></button>
+
+            <button class="btn">
+              <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td>
+            <img
+              src="https://i.pinimg.com/736x/f6/b1/a1/f6b1a1531f2b39cd3f0ff32d6c3e8c52.jpg"
+              alt="boot img"
+            />
+          </td>
+          <td>
+            <b
+              >Boots <br />
+              BU1171</b
+            >
+          </td>
+          <td>Boots</td>
+          <td>In Stock</td>
+          <td><b>$115.11</b></td>
+          <td>
+            <div class="quantity-btns">
+              <button class="one">-</button>
+              <span>0</span>
+              <button class="two">+</button>
+            </div>
+          </td>
+          <td>
+            <button class="btn">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </td>
+          <td>
+            <button class="btn"><i class="fa-regular fa-eye"></i></button>
+          </td>
+          <td>112</td>
+          <td>
+            <b>5</b>
+            <i class="fa-solid fa-star fa-xs" style="color: #177e8c"></i>
+          </td>
+          <td>
+            <button class="btn"><i class="fa-solid fa-heart"></i></button>
+
+            <button class="btn">
+              <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th style="border-bottom-left-radius: 15px">Check</th>
+          <th>Thumbnail</th>
+          <th>
+            Product Title <br />
+            <i class="fa-solid fa-arrow-down fa-sm" style="color: #f5f9ff"></i>
+          </th>
+          <th>
+            Category <br /><i
+              class="fa-solid fa-arrow-down fa-sm"
+              style="color: #f5f9ff"
+            ></i>
+          </th>
+          <th>
+            Stock <br />
+            <i class="fa-solid fa-arrow-down fa-sm" style="color: #f5f9ff"></i>
+          </th>
+          <th>
+            Price <br /><i
+              class="fa-solid fa-arrow-down fa-sm"
+              style="color: #f5f9ff"
+            ></i>
+          </th>
+          <th>Quantity</th>
+          <th>Action</th>
+          <th>Quick View</th>
+          <th>SKU</th>
+          <th>Rating</th>
+          <th style="border-bottom-right-radius: 15px">Wishlist & Compare</th>
+        </tr>
+      </thead>
+    </table>
+  </body>
+</html>
