@@ -3,12 +3,15 @@
 }
 body {
   background-color: beige;
+  margin-top: 0%;
 }
+
+/* INPUT, SELECT AND CART BUTTON STYLING */
 
 .first-navigation {
   display: flex;
   justify-content: space-between;
-  margin: 20px 45px 10px 45px;
+  margin: 0 45px 10px 45px;
 }
 
 .search-bar input {
@@ -38,6 +41,7 @@ body {
   background-color: #167f92;
   color: rgb(245, 250, 255);
   font-weight: 700;
+  cursor: pointer;
 }
 
 .cart-btn:hover {
@@ -55,6 +59,7 @@ body {
   font-weight: 700;
   background-color: #167f92;
   color: rgb(245, 250, 255);
+  cursor: pointer;
 }
 .select-btn:hover {
   box-shadow: 3px 4px 6px rgb(151, 151, 151);
@@ -64,12 +69,15 @@ body {
   font-weight: 700;
 }
 
+/* DROPDOWN STYLING */
+
 .second-navigation {
   display: flex;
   justify-content: space-evenly;
 }
 
 select {
+  cursor: pointer;
   outline: none;
   width: 400px;
   height: 30px;
@@ -80,6 +88,8 @@ select {
   border: 1px solid rgb(126, 126, 126);
   box-shadow: 6px 6px 6px rgb(187, 187, 187);
 }
+
+/* TABLE STYLING */
 
 table {
   margin: 20px auto;
@@ -98,8 +108,6 @@ td {
 }
 
 th {
-  /* border-top-left-radius: 100px; */
-
   padding-top: 10px;
   background-color: #167f92;
   color: aliceblue;
@@ -117,10 +125,15 @@ tr:hover {
   background-color: beige;
 }
 
+/* ALL IMAGES */
+
 img {
   width: 60px;
   border-radius: 5px;
 }
+
+/* ADD AND MINUS BUTTONS */
+
 .quantity-btns .one {
   padding: 5px 9px;
   border: 1px solid black;
@@ -128,6 +141,7 @@ img {
   border-bottom-left-radius: 15px;
   background-color: #167f92;
   color: aliceblue;
+  cursor: pointer;
 }
 
 .one:hover {
@@ -139,7 +153,9 @@ span {
   font-size: large;
   padding: 2px 5px 4px 5px;
 }
+
 .quantity-btns .two {
+  cursor: pointer;
   border: 1px solid black;
   padding: 5px 8px;
   background-color: #167f92;
@@ -153,7 +169,10 @@ span {
   box-shadow: 2px 3px 8px grey;
 }
 
+/* INSIDE TABLE BUTTONS */
+
 .btn {
+  cursor: pointer;
   border: 0;
   padding: 10px;
   border-radius: 99px;
@@ -168,4 +187,25 @@ span {
   border: 2px solid #167f92;
   padding: 6px;
   box-shadow: 2px 4px 5px rgb(165, 165, 165);
+}
+
+/* LAST-LOADING-BUTTON */
+
+.Loading-btn {
+  display: block;
+  margin: auto auto;
+  text-align: center;
+  padding: 8px 0;
+  color: #167f92;
+  background-color: #dadada;
+  border-radius: 4px;
+  border: 2px solid #167f92;
+  font-weight: 700;
+}
+
+.Loading-btn:hover {
+  background-color: #167f92;
+  color: white;
+  cursor: wait;
+  box-shadow: 4px 6px 5px rgb(165, 165, 165);
 }
